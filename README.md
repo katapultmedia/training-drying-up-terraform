@@ -2,7 +2,13 @@
 
 # DRY Terraform Tutorial
 
-[Terraform](https://terraform.io) (TF) is a great way to provision infrastructure. In fact, it is to us becoming the de facto standard. there are ways to DRY (don't repeat yourself) your code to make it considerably easier for reuse and reduce the blast radius for changes.
+[Terraform](https://terraform.io) (TF) is a great way to provision infrastructure. In fact, it is to us becoming the de facto standard. There are ways to DRY (don't repeat yourself) your code to make it considerably easier for reuse and reduce the blast radius for changes.
+
+This code continues where [Terraforming TF Cloud](https://github.com/katapultmedia/training-terraforming-tf-cloud) leaves off.
+
+## Video Walkthrough
+
+[![video](https://katapultmedia.com/wp-content/uploads/2020/02/DRYing-up-Terraform-with-Modules-and-Locals-scaled.jpg)](https://www.youtube.com/watch?v=-MVplkiUoFQ&feature=youtu.be)
 
 ## Terraform Modules
 

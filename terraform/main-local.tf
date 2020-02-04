@@ -1,13 +1,9 @@
-resource "tfe_workspace" "training" {
-  name         = "tf-cloud-training-local"
-  organization = local.org_name
+module "training-local" {
+  source = "./modules/workspace"
 
-  operations        = false # state storage only
-  terraform_version = "0.12.19"
-}
+  name       = "tf-cloud-training-local"
+  operations = false # state storage only
 
-resource "tfe_team_access" "training" {
-  access       = "read"
-  team_id      = tfe_team.training.id
-  workspace_id = tfe_workspace.training.id
+  training_access  = "read"
+  training_team_id = tfe_team.training.id
 }
